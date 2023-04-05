@@ -8,11 +8,6 @@
 #   Nolan Armstrong
 #   Jack Reed
 
-#Question 1 (Nolan Armstrong)
-name = "Lucas Jones"
+#Question 1
 
-def printName(name) :
-    print(name)
- 
-printName(name)
 
