@@ -9,7 +9,7 @@
 #   Jack Reed
 
 #Question 1
-p0 = 1000
+p0 = 100000
 alpha0 = 10
 def findTemps(p0, alpha0):
     
