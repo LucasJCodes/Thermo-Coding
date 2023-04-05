@@ -8,9 +8,14 @@
 #   Nolan Armstrong
 #   Jack Reed
 
+p0 = 100000 # Pa
+alpha0 = 10 # m^3
+Rd = 287 # J/kg K
+Cv = 718 # J/kg K
+Cp = 1005 # J/kg K
+
 #Question 1
-p0 = 100000
-alpha0 = 10
+
 def findTemps(p0, alpha0):
     
 
