@@ -36,6 +36,19 @@ def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
 
 # Question 4
 
+def findHeat1(Cv,TempA, TempB, TempC, TempD):
+    HeatIsochoric = (Cv * (TempB-TempA))
+    HeatIsochoric = (Cv * (TempD-TempC))
+        
+    return HeatIsochoric
+    
+def findHeat2(Cp,TempA, TempB, TempC, TempD):
+    HeatIsobaric = (Cp * (TempC-TempB))
+    HeatIsobaric = (Cp * (TempA-TempD))
+    
+    return HeatIsobaric
+
+
 # Question 5
 
 def NetHeat(u1, u2, u3, u4):
