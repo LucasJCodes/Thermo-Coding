@@ -35,9 +35,18 @@ def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
 # Question 3-
 
 
+# Question 3 - Jack Reed
+def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
+    Net_Work = WorkBC + WorkDA
+    return(Net_Work)
 # Question 4
 
 # Question 5
+
+def NetHeat(u1, u2, u3, u4):
+    totalHeat = u1 + u2 + u3 + u4
+    
+    return totalHeat
 
 # Question 6
  
