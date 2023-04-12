@@ -37,18 +37,6 @@ def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
     Net_Work = WorkAB + WorkBC + WorkCD + WorkDA
     return(Net_Work)
 
-# Question 2
-
-# Question 3 
-
-def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
-    Net_Work = WorkBC + WorkDA
-    return(Net_Work)
-
-<<<<<<< HEAD
-
-=======
->>>>>>> da509514c364125cf7c506688c95cbfca5b20c95
 # Question 4
 
 def findHeat1(Cv,TempA, TempB, TempC, TempD):
