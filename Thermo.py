@@ -32,10 +32,8 @@ def get_Work_Isochoric():
     return 0
 
 # Question 3-
-=======
-# Question 2
->>>>>>> da509514c364125cf7c506688c95cbfca5b20c95
 
+# Question 2
 
 # Question 3 
 
