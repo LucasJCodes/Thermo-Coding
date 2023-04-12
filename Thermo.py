@@ -14,7 +14,7 @@ Rd = 287 # J/kg K
 Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
 
-# Question 1- Whole group
+# Question 1
 
 def findTemp(p0, alpha0):
     temperature = (p0 * alpha0) / Rd
@@ -25,6 +25,7 @@ def findTemp(p0, alpha0):
 print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTemp((2 * p0), alpha0)))
 
 
+<<<<<<< HEAD
 # Question 2- Lucas Jones
 
 def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
@@ -36,13 +37,31 @@ def get_Work_Isochoric():
     return 0
 
 # Question 3-
+=======
+# Question 2
+>>>>>>> da509514c364125cf7c506688c95cbfca5b20c95
 
 
-# Question 3 - Jack Reed
+# Question 3 
+
 def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
     Net_Work = WorkBC + WorkDA
     return(Net_Work)
+
 # Question 4
+
+def findHeat1(Cv,TempA, TempB, TempC, TempD):
+    HeatIsochoric = (Cv * (TempB-TempA))
+    HeatIsochoric = (Cv * (TempD-TempC))
+        
+    return HeatIsochoric
+    
+def findHeat2(Cp,TempA, TempB, TempC, TempD):
+    HeatIsobaric = (Cp * (TempC-TempB))
+    HeatIsobaric = (Cp * (TempA-TempD))
+    
+    return HeatIsobaric
+
 
 # Question 5
 
