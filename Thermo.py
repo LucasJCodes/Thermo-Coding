@@ -56,8 +56,8 @@ def findHeat2(Cp,TempA, TempB, TempC, TempD):
 
 # Question 5
 
-def NetHeat(u1, u2, u3, u4):
-    totalHeat = u1 + u2 + u3 + u4
+def NetHeat(q1, q2, q3, q4):
+    totalHeat = q1 + q2 + q3 + q4
     
     return totalHeat
 
