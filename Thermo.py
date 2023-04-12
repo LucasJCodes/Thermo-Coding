@@ -31,7 +31,11 @@ def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
 def get_Work_Isochoric():
     return 0
 
-# Question 3-
+# Question 3
+
+def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
+    Net_Work = WorkAB + WorkBC + WorkCD + WorkDA
+    return(Net_Work)
 
 # Question 2
 
