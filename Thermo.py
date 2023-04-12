@@ -39,6 +39,8 @@ def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
 def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
     Net_Work = WorkBC + WorkDA
     return(Net_Work)
+
+
 # Question 4
 
 def findHeat1(Cv,TempA, TempB, TempC, TempD):
