@@ -31,6 +31,19 @@ print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTem
 
 # Question 4
 
+def findHeat1(Cv,TempA, TempB, TempC, TempD):
+    HeatIsochoric = (Cv * (TempB-TempA))
+    HeatIsochoric = (Cv * (TempD-TempC))
+        
+    return HeatIsochoric
+    
+def findHeat2(Cp,TempA, TempB, TempC, TempD):
+    HeatIsobaric = (Cp * (TempC-TempB))
+    HeatIsobaric = (Cp * (TempA-TempD))
+    
+    return HeatIsobaric
+
+
 # Question 5
 
 # Question 6
