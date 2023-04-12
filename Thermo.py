@@ -32,6 +32,9 @@ def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
     
     return work
 
+def get_Work_Isochoric():
+    return 0
+
 # Question 3-
 
 
