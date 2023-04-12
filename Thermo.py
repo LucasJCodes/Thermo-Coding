@@ -25,10 +25,20 @@ def findTemp(p0, alpha0):
 print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTemp((2 * p0), alpha0)))
 
 
-# Question 2
+# Question 2- Lucas Jones
 
-# Question 3
+def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
+    work = pressure * (alpha_final - alpha_initial)
+    
+    return work
 
+# Question 3-
+
+
+# Question 3 - Jack Reed
+def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
+    Net_Work = WorkBC + WorkDA
+    return(Net_Work)
 # Question 4
 
 def findHeat1(Cv,TempA, TempB, TempC, TempD):
@@ -45,6 +55,11 @@ def findHeat2(Cp,TempA, TempB, TempC, TempD):
 
 
 # Question 5
+
+def NetHeat(u1, u2, u3, u4):
+    totalHeat = u1 + u2 + u3 + u4
+    
+    return totalHeat
 
 # Question 6
  
