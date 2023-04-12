@@ -27,8 +27,11 @@ print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTem
 
 # Question 2
 
-# Question 3
 
+# Question 3 - Jack Reed
+def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
+    Net_Work = WorkBC + WorkDA
+    return(Net_Work)
 # Question 4
 
 # Question 5
