@@ -14,7 +14,7 @@ Rd = 287 # J/kg K
 Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
 
-#Question 1
+# Question 1- Whole group
 
 def findTemp(p0, alpha0):
     temperature = (p0 * alpha0) / Rd
@@ -23,3 +23,20 @@ def findTemp(p0, alpha0):
 
 
 print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTemp((2 * p0), alpha0)))
+
+
+# Question 2
+
+# Question 3
+
+# Question 4
+
+# Question 5
+
+# Question 6
+ 
+# Question 7
+
+# Question 8
+
+#----------------------------Main Program-------------------------------------
