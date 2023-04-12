@@ -21,11 +21,6 @@ def findTemp(p0, alpha0):
     
     return temperature
 
-
-print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTemp((2 * p0), alpha0)))
-
-
-<<<<<<< HEAD
 # Question 2- Lucas Jones
 
 def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
