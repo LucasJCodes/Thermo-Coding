@@ -33,6 +33,11 @@ print("temperature 1: {} temperature 2: {}".format(findTemp(p0, alpha0), findTem
 
 # Question 5
 
+def NetHeat(u1, u2, u3, u4):
+    totalHeat = u1 + u2 + u3 + u4
+    
+    return totalHeat
+
 # Question 6
  
 # Question 7
