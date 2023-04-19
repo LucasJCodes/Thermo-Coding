@@ -81,6 +81,9 @@ def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
 #----------------------------Main Program-------------------------------------#
 
 # Find and print out all the temperature values
+
+print("Question 1:")
+
 tempA = findTemp(p0, alpha0)
 print("Temperature A: {}".format(tempA))
 
@@ -94,6 +97,20 @@ tempD = findTemp(p0, 2 * alpha0)
 print("Temperature C: {}".format(tempD))
 
 # Get work
+
+print("Problem 2")
+
+workAB = get_Work_Isochoric()
+print("Work AB: {}".format(workAB))
+
+workBC = get_Work_Isobaric(2 * p0, alpha0, 2 * alpha0)
+print("Work BC: {}".format(workBC))
+
+workCD = get_Work_Isochoric()
+print("Work CD: {}".format(workCD))
+
+workDA = get_Work_Isobaric(p0, 2 * alpha0, alpha0)
+print("Work DA: {}".format(workDA))
 
 # Get net work
 
