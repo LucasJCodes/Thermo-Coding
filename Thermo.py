@@ -66,3 +66,16 @@ def NetHeat(q1, q2, q3, q4):
 # Question 8
 
 #----------------------------Main Program-------------------------------------#
+
+# Find and print out all the temperature values
+tempA = findTemp(p0, alpha0)
+print("Temperature A: {}".format(tempA))
+
+tempB = findTemp(2 * p0, alpha0)
+print("Temperature B: {}".format(tempB))
+
+tempC = findTemp(2 * p0, 2 * alpha0)
+print("Temperature C: {}".format(tempC))
+
+tempD = findTemp(p0, 2 * alpha0)
+print("Temperature C: {}".format(tempD))
