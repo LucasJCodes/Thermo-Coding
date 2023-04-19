@@ -65,4 +65,10 @@ def NetHeat(q1, q2, q3, q4):
 
 # Question 8
 
+def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
+    Efficiency = (((Cv(TempB-TempA))+(Cp(TempC- TempB))-(Cv(TempD- TempC))+(Cp(TempA-TempD)))/(Cv(TempB-TempA)+(Cp(TempC-TempB))))
+    
+    return Efficiency
+
+
 #----------------------------Main Program-------------------------------------#
