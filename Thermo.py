@@ -113,7 +113,9 @@ workDA = get_Work_Isobaric(p0, 2 * alpha0, alpha0)
 print("Work DA: {}".format(workDA))
 
 # Get net work
-print("")
+print("Problem 7")
+
+
 
 # Get heat
 
