@@ -21,7 +21,7 @@ def findTemp(p0, alpha0):
     
     return temperature
 
-# Question 2- Lucas Jones
+# Question 2
 
 def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
     work = pressure * (alpha_final - alpha_initial)
