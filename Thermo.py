@@ -74,4 +74,10 @@ def NetIntEnergy(u1, u2, u3, u4):
 
 # Question 8
 
+def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
+    Efficiency = (((Cv(TempB-TempA))+(Cp(TempC- TempB))-(Cv(TempD- TempC))+(Cp(TempA-TempD)))/(Cv(TempB-TempA)+(Cp(TempC-TempB))))
+    
+    return Efficiency
+
+
 #----------------------------Main Program-------------------------------------#
