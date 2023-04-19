@@ -93,4 +93,18 @@ print("Temperature C: {}".format(tempC))
 tempD = findTemp(p0, 2 * alpha0)
 print("Temperature C: {}".format(tempD))
 
+# Get work
+
+# Get net work
+
+# Get heat
+
+# Get net heat
+
+# Get internal energy
+
+# Get net internal energy
+
+# Get efficiency
+
 
