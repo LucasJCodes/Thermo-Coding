@@ -74,7 +74,7 @@ def findNetIntEnergy(u1, u2, u3, u4):
 
 # Question 8
 def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
-    Efficiency = (((Cv(TempB-TempA))+(Cp(TempC- TempB))-(Cv(TempD- TempC))+(Cp(TempA-TempD)))/(Cv(TempB-TempA)+(Cp(TempC-TempB))))
+    Efficiency = (((Cv*(TempB-TempA))+(Cp*(TempC- TempB))-(Cv*(TempD- TempC))+(Cp*(TempA-TempD)))/(Cv*(TempB-TempA)+(Cp*(TempC-TempB))))
     
     return Efficiency
 
@@ -120,11 +120,26 @@ print("")
 # Get net heat
 
 # Get internal energy
+print("\nQuestion 6")
+
+EnergyAB = InternalEnergy(tempA, tempB)
+print("Change in Internal Energy from A to B: ", EnergyAB, "J")
+
+EnergyBC = InternalEnergy(tempB, tempC)
+print("Change in Internal Energy from B to C: ", EnergyBC, "J")
+
+EnergyCD = InternalEnergy(tempC, tempD)
+print("Change in Internal Energy from C to D: ", EnergyCD, "J")
+
+EnergyDA = InternalEnergy(tempD, tempA)
+print("Change in Internal Energy from D to A: ", EnergyDA, "J")
 
 # Get net internal energy
 NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
 print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy) "J") 
 
 # Get efficiency
+Efficiency = findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD)
+print("Efficiency: {}".format(Efficiency))
 
 
