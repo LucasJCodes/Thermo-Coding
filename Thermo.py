@@ -60,11 +60,16 @@ def NetHeat(q1, q2, q3, q4):
     return totalHeat
 
 # Question 6
- 
+
+def InternalEnergy(TempA, TempB):
+    EnergyChange = 718 * (TempB - TempA)
+    return EnergyChange
+   
 # Question 7
 
 # Question 8
 
+<<<<<<< HEAD
 #----------------------------Main Program-------------------------------------#
 
 # Find and print out all the temperature values
@@ -79,3 +84,12 @@ print("Temperature C: {}".format(tempC))
 
 tempD = findTemp(p0, 2 * alpha0)
 print("Temperature C: {}".format(tempD))
+=======
+def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
+    Efficiency = (((Cv(TempB-TempA))+(Cp(TempC- TempB))-(Cv(TempD- TempC))+(Cp(TempA-TempD)))/(Cv(TempB-TempA)+(Cp(TempC-TempB))))
+    
+    return Efficiency
+
+
+#----------------------------Main Program-------------------------------------#
+>>>>>>> 6d9072d0c2c3076d33c7fb068aaea88a493e7b56
