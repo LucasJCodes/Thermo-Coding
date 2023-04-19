@@ -119,6 +119,19 @@ print("Work DA: {}".format(workDA))
 # Get net heat
 
 # Get internal energy
+print("\nQuestion 6")
+
+EnergyAB = InternalEnergy(tempA, tempB)
+print("Change in Internal Energy from A to B: ", EnergyAB, "J")
+
+EnergyBC = InternalEnergy(tempB, tempC)
+print("Change in Internal Energy from B to C: ", EnergyBC, "J")
+
+EnergyCD = InternalEnergy(tempC, tempD)
+print("Change in Internal Energy from C to D: ", EnergyCD, "J")
+
+EnergyDA = InternalEnergy(tempD, tempA)
+print("Change in Internal Energy from D to A: ", EnergyDA, "J")
 
 # Get net internal energy
 NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
