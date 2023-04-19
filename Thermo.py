@@ -69,7 +69,7 @@ def InternalEnergy(TempA, TempB):
 
 # Question 8
 
-<<<<<<< HEAD
+
 #----------------------------Main Program-------------------------------------#
 
 # Find and print out all the temperature values
