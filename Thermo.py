@@ -67,7 +67,7 @@ def InternalEnergy(TempA, TempB):
    
 # Question 7
 
-def NetIntEnergy(u1, u2, u3, u4):
+def findNetIntEnergy(u1, u2, u3, u4):
     totalIntEnergy = u1 + u2 + u3 + u4
     
     return totalIntEnergy
@@ -102,21 +102,10 @@ print("Temperature C: {}".format(tempD))
 # Get net heat
 
 # Get internal energy
-print("\nQuestion 6")
-
-EnergyAB = InternalEnergy(tempA, tempB)
-print("Change in Internal Energy from A to B: ", EnergyAB, "J")
-
-EnergyBC = InternalEnergy(tempB, tempC)
-print("Change in Internal Energy from B to C: ", EnergyBC, "J")
-
-EnergyCD = InternalEnergy(tempC, tempD)
-print("Change in Internal Energy from C to D: ", EnergyCD, "J")
-
-EnergyDA = InternalEnergy(tempD, tempA)
-print("Change in Internal Energy from D to A: ", EnergyDA, "J")
 
 # Get net internal energy
+NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
+print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy) "J") 
 
 # Get efficiency
 
