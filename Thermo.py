@@ -67,6 +67,11 @@ def InternalEnergy(TempA, TempB):
    
 # Question 7
 
+def NetIntEnergy(u1, u2, u3, u4):
+    totalIntEnergy = u1 + u2 + u3 + u4
+    
+    return totalIntEnergy
+
 # Question 8
 
 
