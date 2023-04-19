@@ -60,7 +60,11 @@ def NetHeat(q1, q2, q3, q4):
     return totalHeat
 
 # Question 6
- 
+
+def InternalEnergy(TempA, TempB):
+    EnergyChange = 718 * (TempB - TempA)
+    return EnergyChange
+   
 # Question 7
 
 # Question 8
