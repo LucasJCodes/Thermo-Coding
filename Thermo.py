@@ -135,7 +135,7 @@ print("Change in Internal Energy from D to A: ", EnergyDA, "J")
 
 # Get net internal energy
 NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
-print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy) "J") 
+print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy), "J") 
 
 # Get efficiency
 Efficiency = findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD)
