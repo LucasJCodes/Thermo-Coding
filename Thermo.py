@@ -119,7 +119,22 @@ print("Problem 7")
 
 # Get heat
 
+HeatAB = findHeat1(Cv, tempA, tempB, tempC, tempD)
+print("Heat from A to B: {} J kg^-1".format(HeatAB))
+
+HeatBC = findHeat2(Cp, tempA, tempB, tempC, tempD)
+print("Heat from B to C: {} J kg^-1".format(HeatBC))
+
+HeatCD = findHeat1(Cv, tempA, tempB, tempC, tempD)
+print("Heat from C to D: {} J kg^-1".format(HeatCD))
+
+HeatDA = findHeat2(Cv, tempA, tempB, tempC, tempD)
+print("Heat from D to A: {} J kg^-1".format(HeatDA))
+
 # Get net heat
+
+HeatNet = NetHeat(HeatAB, HeatBC, HeatCD, HeatDA)
+print("Net Heat is {} J kg^-1".format(HeatNet))
 
 # Get internal energy
 print("\nQuestion 6")
@@ -138,7 +153,7 @@ print("Change in Internal Energy from D to A: ", EnergyDA, "J")
 
 # Get net internal energy
 NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
-print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy) "J") 
+print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy), "J") 
 
 # Get efficiency
 Efficiency = findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD)
