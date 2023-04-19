@@ -67,7 +67,7 @@ def InternalEnergy(TempA, TempB):
    
 # Question 7
 
-def NetIntEnergy(u1, u2, u3, u4):
+def findNetIntEnergy(u1, u2, u3, u4):
     totalIntEnergy = u1 + u2 + u3 + u4
     
     return totalIntEnergy
@@ -121,6 +121,8 @@ print("Work DA: {}".format(workDA))
 # Get internal energy
 
 # Get net internal energy
+NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
+print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy) "J") 
 
 # Get efficiency
 
