@@ -84,7 +84,7 @@ def findNetIntEnergy(u1, u2, u3, u4):
 # Define function to calculate efficiency
 
 def findEfficiency (workNet, heatAB, heatBC):
-    Efficiency = workNet / (heatAB + heatBC)
+    Efficiency = (workNet / (heatAB + heatBC))  * 100
     
     return Efficiency
 
@@ -178,11 +178,11 @@ print("Net Internal Energy: {} J/kg".format(NetIntEnergy))
 
 print("\nQuestion 8")
 
-Efficiency = round(findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD), 2)
+Efficiency = round(findEfficiency (netWork, HeatAB, HeatBC), 2)
 print("Efficiency: {}".format(Efficiency))
 
 
 print(" /\../\\")
 print("('o..o')")
-print("   =*=   ")
+print("  =*=   ")
 print("(\.||./)~~**")
