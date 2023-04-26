@@ -185,3 +185,7 @@ Efficiency = round(findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD), 2)
 print("Efficiency: {}".format(Efficiency))
 
 
+print(" /\../\\")
+print("('o..o')")
+print("   =*=   ")
+print("(\.||./)~~**")
