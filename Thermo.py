@@ -134,16 +134,16 @@ print("Net Work: {} J/kg".format(netWork))
 
 print("\nQuestion 4")
 
-HeatAB = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
+HeatAB = round(findHeat1(Cv, tempA, tempB), 2)
 print("Heat from A to B: {} J/kg".format(HeatAB))
 
-HeatBC = round(findHeat2(Cp, tempA, tempB, tempC, tempD), 2)
+HeatBC = round(findHeat2(Cp, tempB, tempC), 2)
 print("Heat from B to C: {} J/kg".format(HeatBC))
 
-HeatCD = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
+HeatCD = round(findHeat1(Cv, tempC, tempD), 2)
 print("Heat from C to D: {} J/kg".format(HeatCD))
 
-HeatDA = round(findHeat2(Cv, tempA, tempB, tempC, tempD), 2)
+HeatDA = round(findHeat2(Cv, tempD, tempA), 2)
 print("Heat from D to A: {} J/kg".format(HeatDA))
 
 # Get net heat
