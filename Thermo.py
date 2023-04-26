@@ -11,7 +11,8 @@
 # Define constants
 
 p0 = 100000 # Pa
-alpha0 = 10 # m^3
+volume = 10 # m^3
+alpha0 = 1 / volume # Kg/m^3
 Rd = 287 # J/kg K
 Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
@@ -124,16 +125,12 @@ workDA = round(get_Work_Isobaric(p0, 2 * alpha0, alpha0), 2)
 print("Work from D to A: {}".format(workDA))
 
 # Get net work
-<<<<<<< HEAD
 print("Problem 7")
 
-
-=======
 
 print("\nQuestion 3")
 netWork = round(Total_Work(workAB, workBC, workCD, workDA), 2)
 print("Net Work: {}".format(netWork))
->>>>>>> 122ca7d24610a745a11180a0c164354acc12b5d5
 
 # Get heat
 
