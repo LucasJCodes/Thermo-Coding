@@ -40,23 +40,21 @@ def get_Work_Isochoric():
 
 def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
     Net_Work = WorkAB + WorkBC + WorkCD + WorkDA
+    
     return(Net_Work)
 
 # Question 4
 # Define function to calculate heat for isochoric and isobaric processes
 
-def findHeat1(Cv,TempA, TempB, TempC, TempD):
-    HeatIsochoric = (Cv * (TempB-TempA))
-    HeatIsochoric = (Cv * (TempD-TempC))
+def findHeat1(Cv, Temp2, Temp1):
+    HeatIsochoric = (Cv * (Temp2-Temp1))
         
     return HeatIsochoric
     
-def findHeat2(Cp,TempA, TempB, TempC, TempD):
-    HeatIsobaric = (Cp * (TempC-TempB))
-    HeatIsobaric = (Cp * (TempA-TempD))
+def findHeat2(Cp, Temp2, Temp1):
+    HeatIsobaric = (Cp * (Temp2-Temp1)) 
     
     return HeatIsobaric
-
 
 # Question 5
 # Define function to caluclate Net Heat
@@ -71,6 +69,7 @@ def NetHeat(q1, q2, q3, q4):
 
 def InternalEnergy(TempA, TempB):
     EnergyChange = Cv * (TempB - TempA)
+    
     return EnergyChange
    
 # Question 7
