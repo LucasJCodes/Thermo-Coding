@@ -11,8 +11,7 @@
 # Define constants
 
 p0 = 100000 # Pa
-volume = 10 # m^3
-alpha0 = 1 / volume # Kg/m^3
+alpha0 = 10 # m^3/Kg
 Rd = 287 # J/kg K
 Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
