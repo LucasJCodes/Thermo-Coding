@@ -11,8 +11,12 @@
 # Define constants
 
 p0 = 100000 # Pa
+<<<<<<< Updated upstream
 volume = 10 # m^3
 alpha0 = 1 / volume # Kg/m^3
+=======
+alpha0 = 10 # kg/m^-3
+>>>>>>> Stashed changes
 Rd = 287 # J/kg K
 Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
@@ -186,3 +190,7 @@ Efficiency = round(findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD), 2)
 print("Efficiency: {}".format(Efficiency))
 
 
+print(" /\../\\")
+print("('o..o')")
+print("   =*=   ")
+print("(\.||./)~~**")
