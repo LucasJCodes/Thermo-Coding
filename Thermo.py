@@ -8,6 +8,8 @@
 #   Nolan Armstrong
 #   Jack Reed
 
+# Define constants
+
 p0 = 100000 # Pa
 alpha0 = 10 # m^3
 Rd = 287 # J/kg K
@@ -15,6 +17,7 @@ Cv = 718 # J/kg K
 Cp = 1005 # J/kg K
 
 # Question 1
+# Define function to calculate temperature
 
 def findTemp(p0, alpha0):
     temperature = (p0 * alpha0) / Rd
@@ -22,6 +25,7 @@ def findTemp(p0, alpha0):
     return temperature
 
 # Question 2
+# Define function to caluclate work for isobaric and isochoric processes
 
 def get_Work_Isobaric(pressure, alpha_initial, alpha_final):
     work = pressure * (alpha_final - alpha_initial)
@@ -32,12 +36,14 @@ def get_Work_Isochoric():
     return 0
 
 # Question 3
+# Define function to calculate Net Work
 
 def Total_Work(WorkAB, WorkBC, WorkCD, WorkDA):
     Net_Work = WorkAB + WorkBC + WorkCD + WorkDA
     return(Net_Work)
 
 # Question 4
+# Define function to calculate heat for isochoric and isobaric processes
 
 def findHeat1(Cv,TempA, TempB, TempC, TempD):
     HeatIsochoric = (Cv * (TempB-TempA))
@@ -53,6 +59,7 @@ def findHeat2(Cp,TempA, TempB, TempC, TempD):
 
 
 # Question 5
+# Define function to caluclate Net Heat
 
 def NetHeat(q1, q2, q3, q4):
     totalHeat = q1 + q2 + q3 + q4
@@ -60,12 +67,14 @@ def NetHeat(q1, q2, q3, q4):
     return totalHeat
 
 # Question 6
+# Define function to calculate internal energy
 
 def InternalEnergy(TempA, TempB):
-    EnergyChange = 718 * (TempB - TempA)
+    EnergyChange = Cv * (TempB - TempA)
     return EnergyChange
    
 # Question 7
+# Define function to calculate Net Internal Energy
 
 def findNetIntEnergy(u1, u2, u3, u4):
     totalIntEnergy = u1 + u2 + u3 + u4
@@ -73,6 +82,8 @@ def findNetIntEnergy(u1, u2, u3, u4):
     return totalIntEnergy
 
 # Question 8
+# Define function to calculate efficiency
+
 def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
     Efficiency = (((Cv*(TempB-TempA))+(Cp*(TempC- TempB))-(Cv*(TempD- TempC))+(Cp*(TempA-TempD)))/(Cv*(TempB-TempA)+(Cp*(TempC-TempB))))
     
@@ -82,81 +93,96 @@ def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
 
 # Find and print out all the temperature values
 
-print("Question 1:")
+print("Question 1")
 
-tempA = findTemp(p0, alpha0)
-print("Temperature A: {}".format(tempA))
+tempA = round(findTemp(p0, alpha0), 2)
+print("Temperature A: {} K".format(tempA))
 
-tempB = findTemp(2 * p0, alpha0)
-print("Temperature B: {}".format(tempB))
+tempB = round(findTemp(2 * p0, alpha0), 2)
+print("Temperature B: {} K".format(tempB))
 
-tempC = findTemp(2 * p0, 2 * alpha0)
-print("Temperature C: {}".format(tempC))
+tempC = round(findTemp(2 * p0, 2 * alpha0), 2)
+print("Temperature C: {} K".format(tempC))
 
-tempD = findTemp(p0, 2 * alpha0)
-print("Temperature C: {}".format(tempD))
+tempD = round(findTemp(p0, 2 * alpha0), 2)
+print("Temperature D: {} K".format(tempD))
 
 # Get work
 
-print("Problem 2")
+print("\nQuestion 2")
 
-workAB = get_Work_Isochoric()
-print("Work AB: {}".format(workAB))
+workAB = round(get_Work_Isochoric(), 2)
+print("Work from A to B: {}".format(workAB))
 
-workBC = get_Work_Isobaric(2 * p0, alpha0, 2 * alpha0)
-print("Work BC: {}".format(workBC))
+workBC = round(get_Work_Isobaric(2 * p0, alpha0, 2 * alpha0), 2)
+print("Work from B to C: {}".format(workBC))
 
-workCD = get_Work_Isochoric()
-print("Work CD: {}".format(workCD))
+workCD = round(get_Work_Isochoric(), 2)
+print("Work from C to D: {}".format(workCD))
 
-workDA = get_Work_Isobaric(p0, 2 * alpha0, alpha0)
-print("Work DA: {}".format(workDA))
+workDA = round(get_Work_Isobaric(p0, 2 * alpha0, alpha0), 2)
+print("Work from D to A: {}".format(workDA))
 
 # Get net work
+<<<<<<< HEAD
 print("Problem 7")
 
 
+=======
+
+print("\nQuestion 3")
+netWork = round(Total_Work(workAB, workBC, workCD, workDA), 2)
+print("Net Work: {}".format(netWork))
+>>>>>>> 122ca7d24610a745a11180a0c164354acc12b5d5
 
 # Get heat
 
-HeatAB = findHeat1(Cv, tempA, tempB, tempC, tempD)
+print("\nQuestion 4")
+
+HeatAB = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
 print("Heat from A to B: {} J kg^-1".format(HeatAB))
 
-HeatBC = findHeat2(Cp, tempA, tempB, tempC, tempD)
+HeatBC = round(findHeat2(Cp, tempA, tempB, tempC, tempD), 2)
 print("Heat from B to C: {} J kg^-1".format(HeatBC))
 
-HeatCD = findHeat1(Cv, tempA, tempB, tempC, tempD)
+HeatCD = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
 print("Heat from C to D: {} J kg^-1".format(HeatCD))
 
-HeatDA = findHeat2(Cv, tempA, tempB, tempC, tempD)
+HeatDA = round(findHeat2(Cv, tempA, tempB, tempC, tempD), 2)
 print("Heat from D to A: {} J kg^-1".format(HeatDA))
 
 # Get net heat
 
-HeatNet = NetHeat(HeatAB, HeatBC, HeatCD, HeatDA)
+print("\nQuestion 5")
+
+HeatNet = round(NetHeat(HeatAB, HeatBC, HeatCD, HeatDA), 2)
 print("Net Heat is {} J kg^-1".format(HeatNet))
 
 # Get internal energy
 print("\nQuestion 6")
 
-EnergyAB = InternalEnergy(tempA, tempB)
-print("Change in Internal Energy from A to B: ", EnergyAB, "J")
+EnergyAB = round(InternalEnergy(tempA, tempB), 2)
+print("Change in Internal Energy from A to B:", EnergyAB, "J")
 
-EnergyBC = InternalEnergy(tempB, tempC)
-print("Change in Internal Energy from B to C: ", EnergyBC, "J")
+EnergyBC = round(InternalEnergy(tempB, tempC), 2)
+print("Change in Internal Energy from B to C:", EnergyBC, "J")
 
-EnergyCD = InternalEnergy(tempC, tempD)
-print("Change in Internal Energy from C to D: ", EnergyCD, "J")
+EnergyCD = round(InternalEnergy(tempC, tempD), 2)
+print("Change in Internal Energy from C to D:", EnergyCD, "J")
 
-EnergyDA = InternalEnergy(tempD, tempA)
-print("Change in Internal Energy from D to A: ", EnergyDA, "J")
+EnergyDA = round(InternalEnergy(tempD, tempA), 2)
+print("Change in Internal Energy from D to A:", EnergyDA, "J")
 
 # Get net internal energy
-NetIntEnergy = findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA)
-print("Problem 7. \n Net Internal Energy: {}".format(NetIntEnergy), "J") 
+
+NetIntEnergy = round(findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA), 2)
+print("\nQuestion 7 \n Net Internal Energy: {}".format(NetIntEnergy), "J") 
 
 # Get efficiency
-Efficiency = findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD)
+
+print("\nQuestion 8")
+
+Efficiency = round(findEfficiency (Cv, Cp, tempA, tempB, tempC, tempD), 2)
 print("Efficiency: {}".format(Efficiency))
 
 
