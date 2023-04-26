@@ -93,7 +93,7 @@ def findEfficiency (Cv, Cp, TempA, TempB, TempC, TempD):
 
 # Find and print out all the temperature values
 
-print("Question 1")
+print("\nQuestion 1")
 
 tempA = round(findTemp(p0, alpha0), 2)
 print("Temperature A: {} K".format(tempA))
@@ -112,65 +112,68 @@ print("Temperature D: {} K".format(tempD))
 print("\nQuestion 2")
 
 workAB = round(get_Work_Isochoric(), 2)
-print("Work from A to B: {}".format(workAB))
+print("Work from A to B: {} J/kg".format(workAB))
 
 workBC = round(get_Work_Isobaric(2 * p0, alpha0, 2 * alpha0), 2)
-print("Work from B to C: {}".format(workBC))
+print("Work from B to C: {} J/kg".format(workBC))
 
 workCD = round(get_Work_Isochoric(), 2)
-print("Work from C to D: {}".format(workCD))
+print("Work from C to D: {} J/kg".format(workCD))
 
 workDA = round(get_Work_Isobaric(p0, 2 * alpha0, alpha0), 2)
-print("Work from D to A: {}".format(workDA))
+print("Work from D to A: {} J/kg".format(workDA))
 
 # Get net work
 
 print("\nQuestion 3")
 netWork = round(Total_Work(workAB, workBC, workCD, workDA), 2)
-print("Net Work: {}".format(netWork))
+print("Net Work: {} J/kg".format(netWork))
 
 # Get heat
 
 print("\nQuestion 4")
 
 HeatAB = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
-print("Heat from A to B: {} J kg^-1".format(HeatAB))
+print("Heat from A to B: {} J/kg".format(HeatAB))
 
 HeatBC = round(findHeat2(Cp, tempA, tempB, tempC, tempD), 2)
-print("Heat from B to C: {} J kg^-1".format(HeatBC))
+print("Heat from B to C: {} J/kg".format(HeatBC))
 
 HeatCD = round(findHeat1(Cv, tempA, tempB, tempC, tempD), 2)
-print("Heat from C to D: {} J kg^-1".format(HeatCD))
+print("Heat from C to D: {} J/kg".format(HeatCD))
 
 HeatDA = round(findHeat2(Cv, tempA, tempB, tempC, tempD), 2)
-print("Heat from D to A: {} J kg^-1".format(HeatDA))
+print("Heat from D to A: {} J/kg".format(HeatDA))
 
 # Get net heat
 
 print("\nQuestion 5")
 
 HeatNet = round(NetHeat(HeatAB, HeatBC, HeatCD, HeatDA), 2)
-print("Net Heat is {} J kg^-1".format(HeatNet))
+print("Net Heat: {} J/kg".format(HeatNet))
 
 # Get internal energy
+
 print("\nQuestion 6")
 
 EnergyAB = round(InternalEnergy(tempA, tempB), 2)
-print("Change in Internal Energy from A to B:", EnergyAB, "J")
+print("Change in Internal Energy from A to B: {} J/kg".format(EnergyAB))
 
 EnergyBC = round(InternalEnergy(tempB, tempC), 2)
-print("Change in Internal Energy from B to C:", EnergyBC, "J")
+print("Change in Internal Energy from B to C: {} J/kg".format(EnergyBC))
 
 EnergyCD = round(InternalEnergy(tempC, tempD), 2)
-print("Change in Internal Energy from C to D:", EnergyCD, "J")
+print("Change in Internal Energy from C to D: {} J/kg".format(EnergyCD))
 
 EnergyDA = round(InternalEnergy(tempD, tempA), 2)
-print("Change in Internal Energy from D to A:", EnergyDA, "J")
+print("Change in Internal Energy from D to A: {} J/kg".format(EnergyDA))
 
 # Get net internal energy
 
+print("\nQuestion 7")
+
 NetIntEnergy = round(findNetIntEnergy(EnergyAB, EnergyBC, EnergyCD, EnergyDA), 2)
-print("\nQuestion 7 \n Net Internal Energy: {}".format(NetIntEnergy), "J") 
+print("Net Internal Energy: {} J/kg".format(NetIntEnergy)) 
 
 # Get efficiency
 
