@@ -123,8 +123,6 @@ workDA = round(get_Work_Isobaric(p0, 2 * alpha0, alpha0), 2)
 print("Work from D to A: {} J/kg".format(workDA))
 
 # Get net work
-print("Problem 7")
-
 
 print("\nQuestion 3")
 netWork = round(Total_Work(workAB, workBC, workCD, workDA), 2)
