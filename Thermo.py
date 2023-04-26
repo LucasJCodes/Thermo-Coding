@@ -179,7 +179,7 @@ print("Net Internal Energy: {} J/kg".format(NetIntEnergy))
 print("\nQuestion 8")
 
 Efficiency = round(findEfficiency (netWork, HeatAB, HeatBC), 2)
-print("Efficiency: {}".format(Efficiency))
+print("Efficiency: {}\n".format(Efficiency))
 
 
 print(" /\../\\")
