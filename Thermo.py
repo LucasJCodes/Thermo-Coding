@@ -70,7 +70,7 @@ def NetHeat(q1, q2, q3, q4):
 # Define function to calculate internal energy
 
 def InternalEnergy(TempA, TempB):
-    EnergyChange = 718 * (TempB - TempA)
+    EnergyChange = Cv * (TempB - TempA)
     return EnergyChange
    
 # Question 7
