@@ -143,7 +143,7 @@ print("Heat from B to C: {} J/kg".format(HeatBC))
 HeatCD = round(findHeat1(Cv, tempD, tempC), 2)
 print("Heat from C to D: {} J/kg".format(HeatCD))
 
-HeatDA = round(findHeat2(Cv, tempA, tempD), 2)
+HeatDA = round(findHeat2(Cp, tempA, tempD), 2)
 print("Heat from D to A: {} J/kg".format(HeatDA))
 
 # Get net heat
